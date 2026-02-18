@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Squeeze — Video Compressor</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Ctext%20y%3D%22.9em%22%20font-size%3D%2290%22%3E%F0%9F%8D%8A%3C/text%3E%3C/svg%3E">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600;700&display=swap');
 
@@ -354,6 +355,24 @@
       text-align: center;
       opacity: 0.5;
     }
+
+    .contribute-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.2rem;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .contribute-link:hover {
+      color: var(--text);
+    }
+
+    .contribute-link svg {
+      width: 0.62rem;
+      height: 0.62rem;
+      fill: currentColor;
+    }
   </style>
 </head>
 
@@ -428,7 +447,15 @@
 
     <div class="error-msg" id="errorMsg"></div>
 
-    <p class="footer">runs 100% in your browser. nothing uploaded anywhere. <span style="opacity:0.5">v5</span></p>
+    <p class="footer">
+      runs 100% in your browser. nothing uploaded anywhere. <span style="opacity:0.5">v5</span> ·
+      <a class="contribute-link" href="https://github.com/andreagriffiths11/squeeze" target="_blank" rel="noopener noreferrer" aria-label="Contribute to this project on GitHub">
+        <svg viewBox="0 0 16 16" aria-hidden="true">
+          <path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 0 0 5.47 7.59c.4.07.55-.17.55-.38v-1.34C3.8 14.35 3.33 12.9 3.33 12.9c-.36-.92-.88-1.17-.88-1.17-.72-.49.06-.48.06-.48.79.06 1.21.82 1.21.82.71 1.2 1.86.85 2.31.64.07-.51.28-.85.5-1.05-1.78-.2-3.64-.89-3.64-3.98 0-.88.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.13 0 0 .67-.22 2.2.82a7.5 7.5 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.11.16 1.93.08 2.13.51.56.82 1.27.82 2.15 0 3.1-1.87 3.78-3.65 3.98.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 16 8c0-4.42-3.58-8-8-8Z" />
+        </svg>
+        contribute
+      </a>
+    </p>
   </div>
 
   <!-- Enables SharedArrayBuffer on GitHub Pages (no server config needed) -->
